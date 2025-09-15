@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="main-title">Como Dizer 'I am done' em Diferentes Situações</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            background-image: radial-gradient(circle at top, #1e293b, #0f172a);
+        }
+        .container-card {
+            background-color: #1e293b;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border-left: 6px solid #4a90e2;
+            max-width: 50rem;
+            margin: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container-card:hover {
+            transform: translateY(-5px);
+        }
+        .phrase-block {
+            background-color: #2b3a53;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #475569;
+            transition: all 0.2s ease-in-out;
+        }
+        .phrase-block:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+        .copy-btn {
+            background-color: #475569;
+            color: #e2e8f0;
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            float: right;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .copy-btn:hover {
+            background-color: #64748b;
+        }
+        #message-box {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2b3a53;
+            color: #e2e8f0;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .show {
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    </style>
+</head>
+<body class="p-6 md:p-12 lg:p-16">
+
+    <!-- Language Switch Button -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="language-toggle" class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+            EN
+        </button>
+    </div>
+
+    <div class="space-y-12 max-w-5xl mx-auto">
+
+        <!-- Main title and explanation -->
+        <div class="container-card text-center">
+            <div class="phrase-block">
+                <h1 id="main-header" class="text-3xl font-extrabold text-white mb-4 flex items-center justify-center">
+                    <span class="mr-3">✅</span> <span id="main-title-text">Como Dizer 'I am done' em Diferentes Situações</span>
+                </h1>
+                <p id="main-text" class="text-lg leading-relaxed text-gray-300">
+                    A frase **"I am done"** tem vários significados, dependendo do contexto. Ela pode indicar que você terminou uma tarefa, está de saco cheio de algo, ou até mesmo exausto. Este guia explora as melhores alternativas para cada momento.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section 1: When you are finished with a task -->
+        <div class="container-card border-l-green-400">
+            <h2 id="section1-title" class="text-2xl font-bold text-white mb-4 text-center">No Trabalho (Profissional/Formal)</h2>
+            <div id="section1-description" class="text-lg leading-relaxed text-gray-300 mb-8">
+                Para um ambiente profissional, é importante ser claro e direto. Evite gírias, a não ser que o ambiente seja descontraído.
+            </div>
+
+            <div class="space-y-6">
+                <div class="phrase-block">
+                    <h3 id="s1-e1-title" class="font-bold text-xl text-emerald-400 mb-2">"I have completed..." ou "I have finished..."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I have completed the report.')" id="s1-e1-copy">Copiar</button>
+                        <span id="s1-e1-text">"I have **completed** the report."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s1-e1-meaning-title">Quando usar:</span> <span id="s1-e1-meaning">Opções mais formais e profissionais para dizer que finalizou uma tarefa.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s1-e2-title" class="font-bold text-xl text-emerald-400 mb-2">"I am done."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I am done.')" id="s1-e2-copy">Copiar</button>
+                        <span id="s1-e2-text">"I am **done**."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s1-e2-meaning-title">Quando usar:</span> <span id="s1-e2-meaning">Direto e amigável. Use com colegas e gestores em ambientes mais informais.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s1-e3-title" class="font-bold text-xl text-emerald-400 mb-2">"The task is complete."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('The task is complete.')" id="s1-e3-copy">Copiar</button>
+                        <span id="s1-e3-text">"The task is **complete**."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s1-e3-meaning-title">Quando usar:</span> <span id="s1-e3-meaning">Maneira mais impessoal de comunicar que a tarefa foi finalizada.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: In a casual conversation -->
+        <div class="container-card border-l-blue-400">
+            <h2 id="section2-title" class="text-2xl font-bold text-white mb-4 text-center">No Dia a Dia (Informal)</h2>
+            <div id="section2-description" class="text-lg leading-relaxed text-gray-300 mb-8">
+                Com amigos ou familiares, o contexto é o que importa. As opções abaixo são mais casuais e versáteis.
+            </div>
+
+            <div class="space-y-6">
+                <div class="phrase-block">
+                    <h3 id="s2-e1-title" class="font-bold text-xl text-sky-400 mb-2">"I'm finished."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I\'m finished with my dinner.')" id="s2-e1-copy">Copiar</button>
+                        <span id="s2-e1-text">"I'm **finished** with my dinner."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s2-e1-meaning-title">Quando usar:</span> <span id="s2-e1-meaning">Simples e direto, ideal para terminar de comer, ler ou qualquer atividade.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s2-e2-title" class="font-bold text-xl text-sky-400 mb-2">"All set!"</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('A: Ready to go? B: All set!')" id="s2-e2-copy">Copiar</button>
+                        <span id="s2-e2-text">"A: Ready to go? B: **All set!**"</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s2-e2-meaning-title">Quando usar:</span> <span id="s2-e2-meaning">Ótima para confirmar que você está pronto para sair ou começar algo.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s2-e3-title" class="font-bold text-xl text-sky-400 mb-2">"I'm good."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('A: Do you need more help? B: No, I\'m good.')" id="s2-e3-copy">Copiar</button>
+                        <span id="s2-e3-text">"A: Do you need more help? B: No, I'm **good**."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s2-e3-meaning-title">Quando usar:</span> <span id="s2-e3-meaning">Uma forma educada de dizer que não precisa de mais nada e está bem.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: When you are fed up or exhausted -->
+        <div class="container-card border-l-red-400">
+            <h2 id="section3-title" class="text-2xl font-bold text-white mb-4 text-center">Quando Você Está De Saco Cheio ou Exausto</h2>
+            <div id="section3-description" class="text-lg leading-relaxed text-gray-300 mb-8">
+                Este é o lado mais emocional da frase. O tom de voz e o contexto são essenciais para mostrar que você atingiu seu limite.
+            </div>
+
+            <div class="space-y-6">
+                <div class="phrase-block">
+                    <h3 id="s3-e1-title" class="font-bold text-xl text-rose-400 mb-2">"I'm done with this."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I\'m done with this endless argument.')" id="s3-e1-copy">Copiar</button>
+                        <span id="s3-e1-text">"I'm **done with this** endless argument."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s3-e1-meaning-title">Quando usar:</span> <span id="s3-e1-meaning">Para expressar que você não vai mais participar ou tolerar uma situação.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s3-e2-title" class="font-bold text-xl text-rose-400 mb-2">"I've had enough."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I\'ve had enough of this traffic.')" id="s3-e2-copy">Copiar</button>
+                        <span id="s3-e2-text">"I've **had enough** of this traffic."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s3-e2-meaning-title">Quando usar:</span> <span id="s3-e2-meaning">Um sinal claro de frustração e que o limite de tolerância foi atingido.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Physical and Mental Exhaustion -->
+        <div class="container-card border-l-purple-400">
+            <h2 id="section4-title" class="text-2xl font-bold text-white mb-4 text-center">Para Exaustão Física ou Mental</h2>
+            <div id="section4-description" class="text-lg leading-relaxed text-gray-300 mb-8">
+                Quando você está cansado de uma atividade, seja um exercício físico ou um problema mental.
+            </div>
+
+            <div class="space-y-6">
+                <div class="phrase-block">
+                    <h3 id="s4-e1-title" class="font-bold text-xl text-purple-400 mb-2">"I'm beat." ou "I'm exhausted."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I\'m beat after that workout.')" id="s4-e1-copy">Copiar</button>
+                        <span id="s4-e1-text">"I'm **beat** after that workout."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s4-e1-meaning-title">Quando usar:</span> <span id="s4-e1-meaning">Formas informais de dizer que está exausto fisicamente.</span>
+                    </p>
+                </div>
+                <div class="phrase-block">
+                    <h3 id="s4-e2-title" class="font-bold text-xl text-purple-400 mb-2">"I can't take it anymore."</h3>
+                    <p class="text-gray-200 italic mb-4">
+                        <button class="copy-btn" onclick="copyToClipboard('I can\'t take it anymore. The noise is too much.')" id="s4-e2-copy">Copiar</button>
+                        <span id="s4-e2-text">"I can't **take it anymore**."</span>
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        <span class="font-bold text-sky-400" id="s4-e2-meaning-title">Quando usar:</span> <span id="s4-e2-meaning">Para expressar exaustão mental ou que você não consegue mais aguentar uma situação.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-box"></div>
+
+    <script>
+        const translations = {
+            pt: {
+                mainTitle: 'Como Dizer \'I am done\' em Diferentes Situações',
+                mainText: 'A frase **"I am done"** tem vários significados, dependendo do contexto. Ela pode indicar que você terminou uma tarefa, está de saco cheio de algo, ou até mesmo exausto. Este guia explora as melhores alternativas para cada momento.',
+                section1: {
+                    title: 'No Trabalho (Profissional/Formal)',
+                    description: 'Para um ambiente profissional, é importante ser claro e direto. Evite gírias, a não ser que o ambiente seja descontraído.',
+                    e1: { title: '"I have completed..." ou "I have finished..."', text: 'I have **completed** the report.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Opções mais formais e profissionais para dizer que finalizou uma tarefa.' },
+                    e2: { title: '"I am done."', text: 'I am **done**.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Direto e amigável. Use com colegas e gestores em ambientes mais informais.' },
+                    e3: { title: '"The task is complete."', text: 'The task is **complete**.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Maneira mais impessoal de comunicar que a tarefa foi finalizada.' }
+                },
+                section2: {
+                    title: 'No Dia a Dia (Informal)',
+                    description: 'Com amigos ou familiares, o contexto é o que importa. As opções abaixo são mais casuais e versáteis.',
+                    e1: { title: '"I\'m finished."', text: 'I\'m **finished** with my dinner.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Simples e direto, ideal para terminar de comer, ler ou qualquer atividade.' },
+                    e2: { title: '"All set!"', text: 'A: Ready to go? B: **All set!**', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Ótima para confirmar que você está pronto para sair ou começar algo.' },
+                    e3: { title: '"I\'m good."', text: 'A: Do you need more help? B: No, I\'m **good**.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Uma forma educada de dizer que não precisa de mais nada e está bem.' }
+                },
+                section3: {
+                    title: 'Quando Você Está De Saco Cheio ou Exausto',
+                    description: 'Este é o lado mais emocional da frase. O tom de voz e o contexto são essenciais para mostrar que você atingiu seu limite.',
+                    e1: { title: '"I\'m done with this."', text: 'I\'m **done with this** endless argument.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Para expressar que você não vai mais participar ou tolerar uma situação.' },
+                    e2: { title: '"I\'ve had enough."', text: 'I\'ve **had enough** of this traffic.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Um sinal claro de frustração e que o limite de tolerância foi atingido.' }
+                },
+                section4: {
+                    title: 'Para Exaustão Física ou Mental',
+                    description: 'Quando você está cansado de uma atividade, seja um exercício físico ou um problema mental.',
+                    e1: { title: '"I\'m beat." ou "I\'m exhausted."', text: 'I\'m **beat** after that workout.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Formas informais de dizer que está exausto fisicamente.' },
+                    e2: { title: '"I can\'t take it anymore."', text: 'I can\'t **take it anymore**.', copy: 'Copiar', meaningTitle: 'Quando usar:', meaning: 'Para expressar exaustão mental ou que você não consegue mais aguentar uma situação.' }
+                }
+            },
+            en: {
+                mainTitle: 'How to Say \'I am done\' in Different Situations',
+                mainText: 'The phrase **"I am done"** can have various meanings, depending on the context. It can indicate the end of a task, giving up on something, or even exhaustion. This guide explores the best alternatives for each moment.',
+                section1: {
+                    title: 'At Work (Professional/Formal)',
+                    description: 'In a professional setting, it is important to be clear and direct. Avoid slang unless the environment is relaxed.',
+                    e1: { title: '"I have completed..." or "I have finished..."', text: 'I have **completed** the report.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'More formal and professional options to say you have finished a task.' },
+                    e2: { title: '"I am done."', text: 'I am **done**.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'Direct and friendly. Use with colleagues and managers in more informal settings.' },
+                    e3: { title: '"The task is complete."', text: 'The task is **complete**.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'A more impersonal way of communicating that a task has been completed.' }
+                },
+                section2: {
+                    title: 'In Everyday Life (Informal)',
+                    description: 'With friends or family, context is what matters. The options below are more casual and versatile.',
+                    e1: { title: '"I\'m finished."', text: 'I\'m **finished** with my dinner.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'Simple and direct, ideal for finishing a meal, reading, or any activity.' },
+                    e2: { title: '"All set!"', text: 'A: Ready to go? B: **All set!**', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'Great for confirming that you are ready to leave or start something.' },
+                    e3: { title: '"I\'m good."', text: 'A: Do you need more help? B: No, I\'m **good**.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'A polite way of saying that you no longer need anything and are fine.' }
+                },
+                section3: {
+                    title: 'When You Are Fed Up or Exhausted',
+                    description: 'This is the more emotional side of the phrase. The tone of voice and context are essential to show that you have reached your limit.',
+                    e1: { title: '"I\'m done with this."', text: 'I\'m **done with this** endless argument.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'To express that you will no longer participate in or tolerate a situation.' },
+                    e2: { title: '"I\'ve had enough."', text: 'I\'ve **had enough** of this traffic.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'A clear sign of frustration and that the limit of tolerance has been reached.' }
+                },
+                section4: {
+                    title: 'For Physical or Mental Exhaustion',
+                    description: 'When you are tired of an activity, whether it is a physical exercise or a mental problem.',
+                    e1: { title: '"I\'m beat." or "I\'m exhausted."', text: 'I\'m **beat** after that workout.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'Informal ways of saying you are physically exhausted.' },
+                    e2: { title: '"I can\'t take it anymore."', text: 'I can\'t **take it anymore**.', copy: 'Copy', meaningTitle: 'When to use:', meaning: 'To express mental exhaustion or that you can no longer handle a situation.' }
+                }
+            }
+        };
+
+        const messageBox = document.getElementById('message-box');
+        const toggleButton = document.getElementById('language-toggle');
+        let currentLang = 'pt';
+
+        function updateContent() {
+            const langData = translations[currentLang];
+            
+            document.getElementById('main-title-text').textContent = langData.mainTitle;
+            document.getElementById('main-text').innerHTML = langData.mainText;
+
+            const sections = ['section1', 'section2', 'section3', 'section4'];
+            sections.forEach(sec => {
+                document.getElementById(`${sec}-title`).textContent = langData[sec].title;
+                document.getElementById(`${sec}-description`).innerHTML = langData[sec].description;
+                const secPrefix = sec.replace('section', 's');
+                const numOptions = langData[sec].e3 ? 3 : 2;
+                for (let i = 1; i <= numOptions; i++) {
+                    const e = langData[sec][`e${i}`];
+                    document.getElementById(`${secPrefix}-e${i}-title`).textContent = e.title;
+                    document.getElementById(`${secPrefix}-e${i}-text`).innerHTML = e.text;
+                    document.getElementById(`${secPrefix}-e${i}-copy`).textContent = e.copy;
+                    document.getElementById(`${secPrefix}-e${i}-meaning-title`).textContent = e.meaningTitle;
+                    document.getElementById(`${secPrefix}-e${i}-meaning`).textContent = e.meaning;
+                }
+            });
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'pt' ? 'en' : 'pt';
+            toggleButton.textContent = currentLang.toUpperCase();
+            updateContent();
+        }
+
+        toggleButton.addEventListener('click', toggleLanguage);
+        updateContent();
+
+        function showMessage(text) {
+            messageBox.textContent = text;
+            messageBox.classList.add('show');
+            setTimeout(() => {
+                messageBox.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            showMessage(currentLang === 'pt' ? 'Texto copiado para a área de transferência!' : 'Text copied to clipboard!');
+        }
+    </script>
+</body>
+</html>
